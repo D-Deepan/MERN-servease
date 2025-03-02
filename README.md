@@ -79,6 +79,13 @@ cd backend
 npm start
 ```
 
+### Start the backend server using Nodemon (for development):
+Nodemon automatically restarts the server when file changes are detected.
+```bash
+cd backend
+npx nodemon server.js
+```
+
 ### Start the frontend development server:
 ```bash
 cd frontend
@@ -97,4 +104,20 @@ The following environment variables are required for the backend:
 | JWT_REFRESH   | your_jwt_refresh_secret       | Secret key for JWT refresh tokens.         |
 | JWT_EXPIRES_IN| 1h                             | Expiration time for JWT access tokens.     |
 | DATABASE_URI  | your_mongodb_connection_string| MongoDB connection string.                 |
+
+## Development Tools
+
+### Nodemon
+Nodemon is used as a development dependency to automatically restart the backend server when file changes are detected. It is installed as part of the backend dependencies.
+
+#### Install Nodemon globally (optional):
+```bash
+npm install -g nodemon
+```
+
+#### Run the backend server with Nodemon:
+```bash
+cd backend
+npx nodemon server.js
+```
 
